@@ -1,4 +1,4 @@
-public class Video extends LibraryItem{
+public class Video extends LibraryItem implements ReservedVideo{
 
     private String rating; // video rating property
 
@@ -19,6 +19,17 @@ public class Video extends LibraryItem{
     // setter for rating property
     public void setRating(String rating){
         this.rating = rating;
+    }
+
+    @Override
+    public boolean isVideoReserved() {
+        
+        boolean video = false;
+        if (!video) {             // call to interface ReserveVideo
+            return true;
+        } else {
+            return false;
+        }
     }
     
 }

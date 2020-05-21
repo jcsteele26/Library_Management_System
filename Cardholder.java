@@ -1,8 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cardholder {
 
     private String name;
     private String address;
     private int cardNumber;
+
+    // members for overdue items
+    List <String> overdueBook = new ArrayList<>();
+    List <String> overduePeriodical = new ArrayList<>();
+    List <String> overdueVideo = new ArrayList<>();
 
     // constructor for Cardholder class
     public Cardholder(String name, String address, int cardNumber){

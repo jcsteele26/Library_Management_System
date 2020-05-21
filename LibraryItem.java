@@ -1,4 +1,5 @@
 public class LibraryItem{
+
     // class properties for library item
     private String id;
     private String title;
